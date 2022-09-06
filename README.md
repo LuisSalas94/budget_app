@@ -1,24 +1,44 @@
-# README
+![](https://img.shields.io/badge/Microverse-blueviolet)
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+# Bug App
 
-Things you may want to cover:
+> The Ruby on Rails capstone project is about building a mobile web application where you can manage your budget: you have a list of transactions associated with a category, so that you can see how much money you spent and on what.
 
-* Ruby version
+<img src="./erd_diagram.png" alt="C=UML class diagram for budget app" />
 
-* System dependencies
+## Built With
 
-* Configuration
+- Rails, Ruby, Gems, rspec, SQL.
 
-* Database creation
+## Setup Project
+- Clone repo by using (https://github.com/LuisSalas94/budget_app)
+- Install dependencies with `bundle install`
 
-* Database initialization
+## Usage
+- Run with `rails server`
 
-* How to run the test suite
+## Author
 
-* Services (job queues, cache servers, search engines, etc.)
+👤 **Fernando Salas**
 
-* Deployment instructions
+- GitHub: [@Fernando Salas](https://github.com/LuisSalas94)
+- LinkedIn: [Fernando Salas](https://www.linkedin.com/in/luisfernandosalasgave/)
 
-* ...
+---
+
+## 🤝 Contributing
+
+Contributions, issues, and feature requests are welcome!
+
+Feel free to check the [issues page](https://github.com/Santiago220991/Recipe-App/issues).
+
+## Show your support
+
+Give a ⭐️ if you like this project!
+
+## Acknowledgments
+
+- Original design idea by [Gregoire Vella](https://www.behance.net/gregoirevella) on Behance.
+
+## 📝 License
+This project is [MIT](https://opensource.org/licenses/MIT) licensed.
