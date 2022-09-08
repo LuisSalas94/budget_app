@@ -11,6 +11,18 @@
   </head>
 
   <body>
+
+    <% if notice != nil %>
+    <div class="alert success">
+      <%= notice %>
+    </div>
+    <% end %>
+
+    <% if alert != nil %>
+    <div class="alert error">
+      <%= alert %>
+    </div>
+    <% end %>
     <%= yield %>
   </body>
 </html>

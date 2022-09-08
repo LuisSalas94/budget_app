@@ -10,6 +10,7 @@ class ExpensesController < ApplicationController
     if @expense.save
       @group.group_expenses.create(expense_id: @expense.id)
       redirect_to group_url(@group)
+      flash[:alert] = "Expense was successfully created"
     else
       render :new
     end

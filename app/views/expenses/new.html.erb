@@ -6,13 +6,13 @@
         <%= link_to '<', "/groups/#{params[:group_id]}", class: "nav-link ps-3 pe-3 text-white pt-0 pb-0" %>
         </li>
         </ul>
-    <a class="navbar-brand text-white font-proxima-bold" href="#"><%= "BudgetApp" %></a>
+    <a class="navbar-brand text-white font-proxima-bold" href="#"><%= "NEW TRANSACTION" %></a>
   <%= f.submit 'Add', class: "btn text-white font-proxima-light" %>
   
   </div>
 </nav>
 
-  <%= f.text_field :name, required: true, placeholder: 'Transaction Name', class: "border border-light w-100 p-2 font-proxima-light" %>
+  <%= f.text_field :name, required: true, placeholder: 'Name', class: "border border-light w-100 p-2 font-proxima-light" %>
   <%= f.number_field :amount, step: 0.01, placeholder: 'Amount', class: "border border-light w-100 p-2 font-proxima-light" %>
   <%= f.select :group_id, options_for_select(current_user.groups.map { |g| [g.name, g.id] }, selected: @group.id), {}, class: "border border-light w-100 p-2 font-proxima-light" %>
   <%= f.hidden_field :author_id, value: current_user.id %>
