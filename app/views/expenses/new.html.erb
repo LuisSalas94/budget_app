@@ -1,14 +1,13 @@
 <%= form_with url: group_expenses_path, scope: :expense, method: :post do |f| %>
-<nav >
+<nav class="new_tran_nav" >
   <div >
     <ul >
         <li >
         <%= link_to '<', "/groups/#{params[:group_id]}" %>
         </li>
-        </ul>
+    </ul>
     <a  href="#"><%= "NEW TRANSACTION" %></a>
   <%= f.submit 'Add' %>
-  
   </div>
 </nav>
 

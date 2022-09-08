@@ -1,48 +1,53 @@
-<nav>
-  <div>
+<nav class="detail_nav">
+
+  <div class="detail_inner">
     <ul >
         <li>
         <%= link_to '<', '/'%>
         </li>
-        </ul>
-    <a href="#"><%= @title.upcase || BudgetApp %></a>
-    <button type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-      <span></span>
-    </button>
-    <div id="navbarSupportedContent">
+    </ul>
+    <a class="detail_title" href="#"><%= @title.upcase || BudgetApp %> DETAILS</a>
+   
+    <div>
       <ul>
-        <li>
-          <a  href="/">Categories</a>
-        </li>
         <li >
-          <a href="/sign_out">Log out</a>
+          <a class="detail_log" href="/sign_out">Log out</a>
         </li>
       </ul>
     </div>
+
   </div>
 </nav>
 
-<p>Total Spent: $ <%= @total || 0 %></p>
+
+
+<div class="detail_content">
+
+<div class="detail_total">
+  <p class="detail_total_payment" >Total Payment:  </p>$
+  <%= @total || 0 %>
+</div>
 
 <div>
   <% @expenses.each do |expense| %>
   <div>
-    <div >
-      <div>
+
+    <div class="detail_inner_total" >
+      <div class="inner_total_expense">
         <p>
           <%= expense.name %>
         </p>
-      </div>
-      <div >
-        <p >
+         <p class="inner_total_amount" >
           $ <%= expense.amount %>
         </p>
       </div>
       </div>
     </div>
-  <% end %>
+      <% end %>
 </div>
 
-<div >
-<%= button_to 'Add Transaction', new_group_expense_path(params[:id]), method: :get %>
+<div class="detail_btn_container">
+  <%= button_to 'Add Transaction', new_group_expense_path(params[:id]), method: :get, class:"detail_inner_btn" %>
+</div>
+
 </div>
