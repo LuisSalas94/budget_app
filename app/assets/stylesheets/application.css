@@ -64,7 +64,65 @@ body{
   color: var(--text);
 }
 
+
 .log_banner{
   background: var(--main);
   height:80px;
+  padding: 0 15px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  color: #f5f5f5;
+}
+
+.log_btn{
+  border: none;
+  color: #fff;
+  cursor: pointer;
+  background: transparent;
+  font-size: 16px;
+}
+
+.log_first{
+  margin-top: 15px;
+}
+
+.log_form{
+  width: 100%;
+  height: 50px;
+  padding: 0 5px;
+  border-radius: 5px;
+  focus: none;
+}
+.log_container{
+  text-align: center;
+  margin-top: 15px;
+}
+
+.log_share{
+ color: var(--text);
+ text-decoration: none;
+ font-weight: lighter;
+ 
+}
+
+.log_confirm{
+  display:none;
+}
+
+/*Registes Banner*/
+.register_banner{
+  height: 80px;
+  padding: 0 15px;
+  background: var(--main);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  color: #f5f5f5;
+  margin-bottom: 15px;
+}
+
+.register_banner h2{
+  font-size: 20px;
+  font-weight: lighter;
 }
