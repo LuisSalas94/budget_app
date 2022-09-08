@@ -13,3 +13,58 @@
  *= require_tree .
  *= require_self
  */
+*{
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+:root{
+  --main: #3778c2;
+  --second: #5fb523;
+  --text: #434b54;
+}
+
+body{
+  font-family: "Proxima Nova", sans-serif;
+}
+
+.budget{
+  height: 100vh;
+  width: 100%;
+  background: #f5f5f5;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.budget .title{
+  color: var(--text);
+  margin-bottom: 150px;
+}
+
+.budget .log_in{
+  width:250px;
+  height: 40px;
+  background: var(--main);
+  border: none;
+  color: #fff;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.budget .sign_up{
+  width:250px;
+  height: 40px;
+  border-radius: 5px;
+  cursor: pointer;
+  background:#f5f5f5;
+  border: none;
+  color: var(--text);
+}
+
+.log_banner{
+  background: var(--main);
+  height:80px;
+}
