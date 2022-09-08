@@ -1,4 +1,5 @@
 Rails.application.routes.draw do
+  get 'menu/index'
 devise_for :users
   
  devise_scope :user do
@@ -7,7 +8,7 @@ devise_for :users
     end
 
     unauthenticated do
-      #root to: 'menus#index', as: 'unauthenticated_user_root'
+      root to: 'menus#index', as: 'unauthenticated_user_root'
     end
 
     get '/sign_out', to: 'devise/sessions#destroy'
