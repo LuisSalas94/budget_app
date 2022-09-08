@@ -4,12 +4,14 @@ class Group < ApplicationRecord
   has_many :expenses, through: :group_expenses
 
     def total_amount
-    fees = group_fees.includes([:fee])
+    expenses = group_expenses.includes([:expense])
     total = 0
-    fees.each do |fee|
-      total += fee.fee.amount
+    expenses.each do |expense|
+      total += expense.expense.amount
     end
     total
   end
 
+  validates :name, presence: true
+  validates :icon, presence: true
 end
