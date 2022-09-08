@@ -4,37 +4,38 @@
       <span ></span>
     </button>
     <a  href="#"><%= @title.upcase || BudgetApp %></a>
-    <ul >
-        <li >
-        
-        </li>
+        <ul >
+          <li >
+          
+          </li>
         </ul>
-    <div  id="navbarSupportedContent">
+    <div  id="navbarSupportedContent", class="tran_navbar">
       <ul >
         <li >
-          <a href="/">Categories</a>
+          <a class="tran_title" href="/">TRANSACTIONS</a>
         </li>
         <li >
-          <a  href="/sign_out" method="delete">Log out</a>
+          <a class="tran_title"  href="/sign_out" method="delete">Log out</a>
         </li>
       </ul>
     </div>
+
   </div>
 </nav>
 
-<div>
+<div class="tran_container">
 <% @groups.each do |group|%>
 <div onclick="window.location='/groups/<%=group.id%>'" class="container bg-white border mb-3 row pb-2 pt-2 ms-0 ps-0 pe-0 shadow-sm capybara">
 <i class="fa <%= group.icon %> fa-4x col p-0 d-flex justify-content-center align-self-center" aria-hidden="true"></i>
   
-<div >
-  <p ><%= group.name %></p>
-  <p >$<%= group.total_amount %></p>
+<div class="tran_data" >
+  <p class="tran_name" ><%= group.name %></p>
+  <p class="tran_amount">$<%= group.total_amount %></p>
   </div>
   </div>
 <% end %>
-</div>
 
 <div class="fixed-bottom">
-<%= button_to 'Add Category', new_group_path, method: :get %>
+  <%= button_to 'Add Category', new_group_path, method: :get, class:"tran_btn" %>
+</div>
 </div>
