@@ -1,27 +1,19 @@
 <nav >
   <div >
-    <button  type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-      <span ></span>
-    </button>
-    <a  href="#"><%= @title.upcase || BudgetApp %></a>
-        <ul >
-          <li >
-          
-          </li>
-        </ul>
     <div  id="navbarSupportedContent", class="tran_navbar">
       <ul >
         <li >
           <a class="tran_title" href="/">TRANSACTIONS</a>
         </li>
         <li >
-          <a class="tran_title"  href="/sign_out" method="delete">Log out</a>
+          <a class="tran_title tran_log_out"  href="/sign_out" method="delete">Log out</a>
         </li>
       </ul>
     </div>
 
   </div>
 </nav>
+
 
 <div class="tran_container">
 <% @groups.each do |group|%>

@@ -1,6 +1,6 @@
 <%= form_for(resource, as: resource_name, url: session_path(resource_name)) do |f| %>
   <div class="log_banner">
-    <h5>Left arrow</h5>
+    <%= link_to '<', '/', class:"detail_inner_arrow_final"%>
     <h2>LOGIN</h2>
     <div class="actions">
       <%= f.submit "Log in", class:"log_btn" %>
