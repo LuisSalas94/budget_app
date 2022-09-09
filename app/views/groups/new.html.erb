@@ -4,18 +4,18 @@
   
     <ul >
      <li >
-       <%= link_to '<', '/' %>
+       <%= link_to '<', '/',class:"new_cat_title" %>
      </li>
     </ul>
 
-    <a  href="#"><%= @title.upcase || BudgetApp %></a>
+    <a class="new_cat_title"  href="#"><%= @title.upcase || BudgetApp %></a>
     
-    <%= f.submit 'Create' %>
+    <%= f.submit 'Create', class:"new_cat_btn" %>
   
 </nav>
 
 
-  <%= f.text_field :name, placeholder: 'Category Name'%>
-  <%= f.text_field :icon, placeholder: 'Icon Name'%>
+  <%= f.text_field :name, placeholder: 'Category Name', class:"log_form"%>
+  <%= f.text_field :icon, placeholder: 'Icon Name', class:"log_form"%>
   <%= f.hidden_field :user_id, value: current_user.id %>
 <% end %>

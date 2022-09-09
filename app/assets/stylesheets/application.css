@@ -13,6 +13,8 @@
  *= require_tree .
  *= require_self
  */
+@import url('https://fonts.googleapis.com/css2?family=Berkshire+Swash&display=swap');
+
 *{
   padding: 0;
   margin: 0;
@@ -45,10 +47,13 @@ body{
 .budget .title{
   color: var(--text);
   margin-bottom: 150px;
+  font-family: 'Berkshire Swash', cursive;
+  font-size: 50px;
+  font-weight: 400;
 }
 
 .budget .log_in{
-  width:250px;
+  width:350px;
   height: 40px;
   background: var(--main);
   border: none;
@@ -58,7 +63,7 @@ body{
 }
 
 .budget .sign_up{
-  width:250px;
+  width:350px;
   height: 40px;
   border-radius: 5px;
   cursor: pointer;
@@ -373,4 +378,16 @@ body{
   justify-content: space-between;
   align-items: center;
   padding: 0 15px;
+}
+
+.new_cat_title{
+  color: #f5f5f5;
+}
+
+.new_cat_btn{
+  background: transparent;
+  border:none;
+  color: #f5f5f5;
+  cursor: pointer;
+  font-size: 18px;
 }
