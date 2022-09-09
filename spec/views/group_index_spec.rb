@@ -11,11 +11,11 @@ RSpec.describe 'Group', type: :system do
     end
 
     it 'should show groups' do
-      expect(page).to have_content('CATEGORIES')
+      expect(page).to have_content('TRANSACTIONS')
     end
 
     it 'show show add category button' do
-      expect(page).to have_content('Add Category')
+      expect(page).to have_content('ADD CATEGORY')
     end
 
     it 'should take to new group form' do
