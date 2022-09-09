@@ -1,15 +1,20 @@
 <%= form_with url: "/groups", scope: :group do |f| %>
-<nav>
-  <div >
+
+<nav class="new_cat_nav">
+  
     <ul >
-        <li >
-        <%= link_to '<', '/' %>
-        </li>
-        </ul>
+     <li >
+       <%= link_to '<', '/' %>
+     </li>
+    </ul>
+
     <a  href="#"><%= @title.upcase || BudgetApp %></a>
-  <%= f.submit 'Create' %>
-  </div>
+    
+    <%= f.submit 'Create' %>
+  
 </nav>
+
+
   <%= f.text_field :name, placeholder: 'Category Name'%>
   <%= f.text_field :icon, placeholder: 'Icon Name'%>
   <%= f.hidden_field :user_id, value: current_user.id %>
