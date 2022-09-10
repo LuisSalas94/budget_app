@@ -1,0 +1,9 @@
+<%= form_with(model: expense) do |form| %>
+  <%= form.text_field :name, placeholder: 'Category Name' %>
+  <%= form.number_field :amount, placeholder: 'Total Amount' %>
+  <%= form.hidden_field :author_id, value: 1 %>
+
+  <div>
+    <%= form.submit %>
+  </div>
+<% end %>

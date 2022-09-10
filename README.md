@@ -6,6 +6,8 @@
 
 <img src="./erd_diagram.png" alt="C=UML class diagram for budget app" />
 
+<img src="./budget_app.png" alt="Home budget app" />
+
 ## Built With
 
 - Rails, Ruby, Gems, rspec, SQL.
@@ -24,7 +26,11 @@
 - GitHub: [@Fernando Salas](https://github.com/LuisSalas94)
 - LinkedIn: [Fernando Salas](https://www.linkedin.com/in/luisfernandosalasgave/)
 
----
+**Video Presentation**
+- [Video Link](https://www.loom.com/share/d3a16d213a9b43659efdfdc5d33ff296)
+
+**Live Demo**
+- [Link](https://peaceful-beach-42485.herokuapp.com/)
 
 ## 🤝 Contributing
 

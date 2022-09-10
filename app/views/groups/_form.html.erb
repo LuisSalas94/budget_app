@@ -1,0 +1,10 @@
+<%= form_with(model: group) do |form| %>
+  
+  <%= form.text_field :name, placeholder: 'Category Name' %>
+  <%= form.text_field :icon, placeholder: 'Icon Link' %>
+  <%= form.hidden_field :user_id, value: 1 %>
+
+  <div>
+    <%= form.submit %>
+  </div>
+<% end %>

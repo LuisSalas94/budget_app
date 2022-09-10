@@ -1,0 +1,22 @@
+<%= form_for(resource, as: resource_name, url: session_path(resource_name)) do |f| %>
+  <div class="log_banner">
+    <%= link_to '<', '/', class:"detail_inner_arrow_final"%>
+    <h2>LOGIN</h2>
+    <div class="actions">
+      <%= f.submit "Log in", class:"log_btn" %>
+    </div>
+  </div>
+
+  <div class="field  log_first">
+    <%= f.email_field :email, autofocus: true, autocomplete: "email", placeholder:"Email", class:"log_form" %>
+  </div>
+
+  <div class="field ">
+    <%= f.password_field :password, autocomplete: "current-password", placeholder:"Password", class:"log_form" %>
+  </div>
+
+
+
+<% end %>
+
+<%= render "devise/shared/links" %>

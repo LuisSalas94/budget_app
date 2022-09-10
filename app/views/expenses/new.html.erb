@@ -1,0 +1,21 @@
+<%= form_with url: group_expenses_path, scope: :expense, method: :post do |f| %>
+<nav class="new_tran_nav" >
+   <ul >
+      <li >
+      <%= link_to '<', "/groups/#{params[:group_id]}",class:"new_tran" %>
+      </li>
+    </ul>
+
+  <a class="new_tran"  href="#"><%= "NEW TRANSACTION" %></a>
+
+  <%= f.submit 'Add' , class:"new_tran_btn"%>
+  
+</nav>
+
+  <div class="new_tran_form">
+    <%= f.text_field :name, required: true, placeholder: 'Name', class:"log_form" %>
+    <%= f.number_field :amount, step: 0.01, placeholder: 'Amount', class:"log_form" %>
+    <%= f.select :group_id, options_for_select(current_user.groups.map { |g| [g.name, g.id] }, selected: @group.id), {}, class:"log_form"%>
+    <%= f.hidden_field :author_id, value: current_user.id %>
+  </div>
+<% end %>
