@@ -8,7 +8,7 @@ RSpec.describe 'Group', type: :system do
       fill_in 'Password', with: '123456'
       click_button 'Log in'
     end
-  
+
     it 'It should show groups name' do
       expect(page).to have_content('TRANSACTIONS')
     end
