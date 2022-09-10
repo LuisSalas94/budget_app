@@ -6,6 +6,8 @@
 
 <img src="./erd_diagram.png" alt="C=UML class diagram for budget app" />
 
+<img src="./budget_app.png" alt="Home budget app" />
+
 ## Built With
 
 - Rails, Ruby, Gems, rspec, SQL.
