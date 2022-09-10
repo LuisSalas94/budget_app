@@ -15,26 +15,25 @@
  */
 @import url('https://fonts.googleapis.com/css2?family=Berkshire+Swash&display=swap');
 
-*{
+* {
   padding: 0;
   margin: 0;
   box-sizing: border-box;
   text-decoration: none;
   list-style: none;
-  
 }
 
-:root{
+:root {
   --main: #3778c2;
   --second: #5fb523;
   --text: #434b54;
 }
 
-body{
+body {
   font-family: "Proxima Nova", sans-serif;
 }
 
-.budget{
+.budget {
   height: 100vh;
   width: 100%;
   background: #f5f5f5;
@@ -44,7 +43,7 @@ body{
   justify-content: center;
 }
 
-.budget .title{
+.budget .title {
   color: var(--text);
   margin-bottom: 150px;
   font-family: 'Berkshire Swash', cursive;
@@ -52,8 +51,12 @@ body{
   font-weight: 400;
 }
 
-.budget .log_in{
-  width:350px;
+.log_in {
+  color: var(--text);
+}
+
+.budget .log_in {
+  width: 350px;
   height: 40px;
   background: var(--main);
   border: none;
@@ -62,20 +65,19 @@ body{
   cursor: pointer;
 }
 
-.budget .sign_up{
-  width:350px;
+.budget .sign_up {
+  width: 350px;
   height: 40px;
   border-radius: 5px;
   cursor: pointer;
-  background:#f5f5f5;
+  background: #f5f5f5;
   border: none;
   color: var(--text);
 }
 
-
-.log_banner{
+.log_banner {
   background: var(--main);
-  height:80px;
+  height: 80px;
   padding: 0 15px;
   display: flex;
   align-items: center;
@@ -83,7 +85,7 @@ body{
   color: #f5f5f5;
 }
 
-.log_btn{
+.log_btn {
   border: none;
   color: #fff;
   cursor: pointer;
@@ -91,35 +93,34 @@ body{
   font-size: 16px;
 }
 
-.log_first{
+.log_first {
   margin-top: 15px;
 }
 
-.log_form{
+.log_form {
   width: 100%;
   height: 50px;
   padding: 0 5px;
   border-radius: 5px;
-  focus: none;
 }
-.log_container{
+
+.log_container {
   text-align: center;
   margin-top: 15px;
 }
 
-.log_share{
- color: var(--text);
- text-decoration: none;
- font-weight: lighter;
- 
+.log_share {
+  color: var(--text);
+  text-decoration: none;
+  font-weight: lighter;
 }
 
-.log_confirm{
-  display:none;
+.log_confirm {
+  display: none;
 }
 
-/*Register Banner*/
-.register_banner{
+/* Register Banner */
+.register_banner {
   height: 80px;
   padding: 0 15px;
   background: var(--main);
@@ -130,12 +131,12 @@ body{
   margin-bottom: 15px;
 }
 
-.register_banner h2{
+.register_banner h2 {
   font-size: 20px;
   font-weight: lighter;
 }
 
-.register_sign_btn{
+.register_sign_btn {
   border: none;
   color: #fff;
   cursor: pointer;
@@ -143,24 +144,20 @@ body{
   font-size: 16px;
 }
 
-.register_password{
+.register_password {
   color: var(--text);
   font-size: 14px;
   padding: 12px;
-  display:inline;
+  display: inline;
 }
 
-.log_in_container{
+.log_in_container {
   text-align: center;
   margin-top: 15px;
 }
 
-.log_in{
-  color: var(--text);
-}
-
-/*Forgot Password*/
-.password_container{
+/* Forgot Password */
+.password_container {
   width: 100%;
   height: 50px;
   padding: 0 5px;
@@ -172,30 +169,29 @@ body{
   margin-bottom: 15px;
 }
 
-.password_container h2{
+.password_container h2 {
   font-size: 20px;
   font-weight: lighter;
 }
 
-.password_field{
+.password_field {
   text-align: center;
-  width:100%;
+  width: 100%;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
 }
 
-.password_form{
-  width:350px;
+.password_form {
+  width: 350px;
   height: 30px;
   padding: 0 5px;
   border-radius: 5px;
-  focus: none;
 }
 
-.password_btn{
-  width:350px;
+.password_btn {
+  width: 350px;
   height: 30px;
   border-radius: 5px;
   cursor: pointer;
@@ -203,11 +199,10 @@ body{
   border: none;
   color: #fff;
   margin-top: 15px;
-  
 }
 
-/*Transactions Navbar*/
-.tran_navbar{
+/* Transactions Navbar */
+.tran_navbar {
   height: 80px;
   padding: 0 15px;
   background: var(--main);
@@ -219,25 +214,25 @@ body{
   text-align: center;
 }
 
-.tran_navbar ul{
+.tran_navbar ul {
   display: flex;
   justify-content: space-between;
   align-items: center;
 }
 
-.tran_log_out{
+.tran_log_out {
   position: absolute;
   right: 20px;
   top: 30px;
 }
 
-.tran_title{
+.tran_title {
   color: #f5f5f5;
   text-decoration: none;
   list-style: none;
 }
 
-.tran_container{
+.tran_container {
   background: #f5f5f5;
   height: 100vh;
   display: flex;
@@ -245,10 +240,10 @@ body{
   justify-content: space-between;
 }
 
-.tran_data{
+.tran_data {
   background: #fff;
   height: 80px;
-  margin:15px;
+  margin: 15px;
   padding: 15px;
   border-radius: 5px;
   display: flex;
@@ -257,7 +252,7 @@ body{
   cursor: pointer;
 }
 
-.fixed-bottom{
+.fixed-bottom {
   background: var(--second);
   display: flex;
   justify-content: center;
@@ -265,17 +260,17 @@ body{
   padding: 20px;
 }
 
-.tran_name{
+.tran_name {
   color: var(--text);
   font-weight: lighter;
 }
 
-.tran_amount{
+.tran_amount {
   color: var(--text);
   font-weight: bold;
 }
 
-.tran_btn{
+.tran_btn {
   background: transparent;
   border: 1px solid #f5f5f5;
   border-radius: 3px;
@@ -286,13 +281,13 @@ body{
   text-transform: uppercase;
 }
 
-/*Detail Navbar*/
-.detail_nav{
+/* Detail Navbar */
+.detail_nav {
   background: var(--main);
   height: 80px;
 }
 
-.detail_inner{
+.detail_inner {
   height: 100%;
   display: flex;
   justify-content: space-between;
@@ -300,27 +295,27 @@ body{
   padding: 0 15px;
 }
 
-.detail_title{
+.detail_title {
   color: #f5f5f5;
   font-size: 20px;
   font-weight: lighter;
 }
 
-.detail_inner_arrow{
+.detail_inner_arrow {
   font-size: 20px;
   cursor: pointer;
 }
 
-.detail_inner_arrow_final{
+.detail_inner_arrow_final {
   color: #f5f5f5;
   font-size: 20px;
 }
 
-.detail_log{
+.detail_log {
   color: #f5f5f5;
 }
 
-.detail_content{
+.detail_content {
   height: 100vh;
   background: #f5f5f5;
   padding-top: 20px;
@@ -330,7 +325,7 @@ body{
   text-align: center;
 }
 
-.detail_btn_container{
+.detail_btn_container {
   background: var(--second);
   height: 80px;
   display: flex;
@@ -338,10 +333,10 @@ body{
   justify-content: center;
 }
 
-.detail_total{
+.detail_total {
   background: #fff;
   height: 80px;
-  margin:15px;
+  margin: 15px;
   padding: 15px;
   border-radius: 5px;
   display: flex;
@@ -351,15 +346,15 @@ body{
   text-transform: uppercase;
 }
 
-.detail_inner_total{
-  margin:30px  15px;
+.detail_inner_total {
+  margin: 30px  15px;
   background: #fff;
   height: 80px;
   padding: 15px;
   border-radius: 5px;
 }
 
-.inner_total_expense{
+.inner_total_expense {
   height: 100%;
   display: flex;
   justify-content: space-between;
@@ -367,17 +362,17 @@ body{
   color: var(--text);
 }
 
-.inner_total_amount{
+.inner_total_amount {
   color: var(--text);
   font-weight: bold;
 }
 
-.detail_total_payment{
+.detail_total_payment {
   color: var(--text);
   font-weight: lighter;
 }
 
-.detail_inner_btn{
+.detail_inner_btn {
   background: transparent;
   border: 1px solid #f5f5f5;
   border-radius: 3px;
@@ -387,7 +382,7 @@ body{
   cursor: pointer;
 }
 
-.new_tran_nav{
+.new_tran_nav {
   background: var(--main);
   height: 80px;
   display: flex;
@@ -396,28 +391,27 @@ body{
   padding: 0 15px;
 }
 
-.new_tran{
+.new_tran {
   color: #f5f5f5;
 }
 
-.new_tran_btn{
+.new_tran_btn {
   background: transparent;
-  border:none;
+  border: none;
   color: #f5f5f5;
   cursor: pointer;
   font-size: 18px;
 }
 
-.new_tran_form{
+.new_tran_form {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
   text-align: center;
   padding: 15px;
-  
 }
 
-.new_cat_nav{
+.new_cat_nav {
   background: var(--main);
   height: 80px;
   display: flex;
@@ -426,13 +420,13 @@ body{
   padding: 0 15px;
 }
 
-.new_cat_title{
+.new_cat_title {
   color: #f5f5f5;
 }
 
-.new_cat_btn{
+.new_cat_btn {
   background: transparent;
-  border:none;
+  border: none;
   color: #f5f5f5;
   cursor: pointer;
   font-size: 18px;

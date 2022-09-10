@@ -11,7 +11,7 @@ RSpec.describe 'Session', type: :system do
 
     before(:all) do
       driven_by(:selenium_chrome_headless)
-    end 
+    end
 
     it 'should show login form' do
       expect(page).to have_content('LOGIN')

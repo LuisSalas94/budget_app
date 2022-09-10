@@ -22,7 +22,7 @@ RSpec.describe 'Expense', type: :system do
 
     before(:all) do
       driven_by(:selenium_chrome_headless)
-    end 
+    end
 
     it 'should show category show page' do
       expect(page).to have_content('TEST DETAILS')
@@ -36,8 +36,6 @@ RSpec.describe 'Expense', type: :system do
       click_button 'Add'
       expect(page).to have_content('Test Transaction')
       expect(page).to have_content('TEST DETAILS')
-    end 
-
-
+    end
   end
 end
