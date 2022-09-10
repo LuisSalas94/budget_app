@@ -1,5 +1,6 @@
+# frozen_string_literal: true
+
 class GroupsController < ApplicationController
-  
   def index
     @groups = current_user.groups
     @title = 'Categories'
@@ -7,10 +8,10 @@ class GroupsController < ApplicationController
 
   # GET /groups/1 or /groups/1.json
   def show
-    @group = Group.find(params[:id])
+    @group = current_user.groups.find(params[:id])
     @expenses = @group.group_expenses.map(&:expense_id)
-    @expenses = Expense.where(id: @expenses).sort_by(&:created_at).reverse
-    @total = @expenses.inject(0) { |sum,expense| sum + expense.amount }
+    @expenses =current_user.expenses.where(id: @expenses).sort_by(&:created_at).reverse
+    @total = @expenses.inject(0) { |sum, expense| sum + expense.amount }
     @title = @group.name
   end
 
@@ -64,5 +65,4 @@ class GroupsController < ApplicationController
   def group_params
     params.require(:group).permit(:name, :icon, :user_id)
   end
-
 end

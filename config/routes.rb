@@ -1,8 +1,10 @@
+# frozen_string_literal: true
+
 Rails.application.routes.draw do
   get 'menu/index'
-devise_for :users
-  
- devise_scope :user do
+  devise_for :users
+
+  devise_scope :user do
     authenticated do
       root to: 'groups#index', as: 'user'
     end
@@ -13,7 +15,7 @@ devise_for :users
 
     get '/sign_out', to: 'devise/sessions#destroy'
   end
-    
+
   resources :groups do
     resources :expenses
   end

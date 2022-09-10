@@ -1,3 +1,5 @@
+# frozen_string_literal: true
+
 require 'rails_helper'
 RSpec.describe 'Expense', type: :system do
   describe 'New' do
@@ -26,25 +28,24 @@ RSpec.describe 'Expense', type: :system do
       expect(page).to have_content('Add Transaction')
     end
 
-     it 'should take to new transaction form' do
+    it 'should take to new transaction form' do
       click_button 'Add Transaction'
       expect(page).to have_content('NEW TRANSACTION')
     end
 
-     it 'should show name field' do
+    it 'should show name field' do
       click_button 'Add Transaction'
       expect(page).to have_field('Name')
     end
 
-      it 'should show amount field' do
+    it 'should show amount field' do
       click_button 'Add Transaction'
       expect(page).to have_field('Amount')
     end
 
-     it 'should show submit button' do
+    it 'should show submit button' do
       click_button 'Add Transaction'
       expect(page).to have_button('Add')
     end
-
   end
 end

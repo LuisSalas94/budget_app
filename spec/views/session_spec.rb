@@ -1,3 +1,5 @@
+# frozen_string_literal: true
+
 require 'rails_helper'
 
 RSpec.describe 'Session', type: :system do
@@ -18,6 +20,5 @@ RSpec.describe 'Session', type: :system do
     it 'should show password field' do
       expect(page).to have_field('Password')
     end
-
   end
 end
